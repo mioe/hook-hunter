@@ -1,4 +1,6 @@
 import Fastify from 'fastify'
+import fastifyPrintRoutes from 'fastify-print-routes'
+
 const fastify = Fastify({
 	logger: {
 		transport: {
@@ -12,6 +14,8 @@ const fastify = Fastify({
 		},
 	},
 })
+
+await fastify.register(fastifyPrintRoutes)
 
 fastify.post(
 	'/webhook',

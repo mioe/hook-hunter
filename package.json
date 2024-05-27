@@ -9,7 +9,8 @@
 		"dev": "node --watch main.mjs"
 	},
 	"dependencies": {
-		"fastify": "^4.27.0"
+		"fastify": "^4.27.0",
+		"fastify-print-routes": "^3.2.0"
 	},
 	"devDependencies": {
 		"pino-pretty": "^11.0.0"
